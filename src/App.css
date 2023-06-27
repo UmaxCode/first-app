@@ -1,0 +1,57 @@
+.App {
+  background-color: white;
+  position: absolute;
+  inset: 0;
+}
+
+.profile {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  animation: rotate 8s infinite linear;
+}
+
+.badge {
+  width: 250px;
+  font-size: 20px;
+}
+
+.left, .right{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left {
+  left: -15px;
+
+}
+
+.right {
+  
+  right: -15px
+
+}
+
+.picture {
+  width: 90%;
+  height: 90%;
+  background: url("./asserts/max.png") center center/cover;
+  margin: auto;
+  animation: antirot 8s infinite linear;
+  
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes antirot {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
